@@ -34,7 +34,7 @@ public class ApiTest {
 		
 		
 		RestAssured.given()
-					.body("{\"task\":\"teste via API\",\"dueDate\":\"2020-08-23\"}")
+					.body("{\"task\":\"teste via API\",\"dueDate\":\"2020-10-23\"}")
 					.contentType(ContentType.JSON)
 				   .when()
 				   		.post("/todo")		   
@@ -47,7 +47,7 @@ public class ApiTest {
 		
 		
 		RestAssured.given()
-					.body("{\"task\":\"teste via API\",\"dueDate\":\"2010-08-23\"}")
+					.body("{\"task\":\"teste via API\",\"dueDate\":\"2010-10-23\"}")
 					.contentType(ContentType.JSON)
 				   .when()
 				   		.post("/todo")		   
